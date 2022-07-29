@@ -1,0 +1,5 @@
+node_modules
+digital-signage/node_modules
+ds-server/node_modules
+ds-server/config/database.js
+config.ini
