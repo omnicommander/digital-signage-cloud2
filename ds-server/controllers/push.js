@@ -10,18 +10,15 @@ router.delete('/pushes/remove/:id', deletePush); */
 export const getAllPushes = async (req, res) => {
     try {
         const customers = await Push.findAll();
-        console.log('!!!');
+
         res.json(customers);
     } catch (error) {
-        console.log('!!!');
         res.json({ message: error.message });
     }  
 }
  
 export const getPushById = async (req, res) => {
-    console.log()
     try {
-        console.log('!!!!!!!')
         const customer = await Push.findAll({
             where: {
                 id: req.params.id
@@ -42,7 +39,6 @@ export const getPushesByCustomerId = async (req, res) => {
                 id: req.params.id
             }
         });
-        console.log(pushes)
         res.json(pushes);
     } catch (error) {
         res.json({ message: error.message });
@@ -57,7 +53,6 @@ export const getPushByPI_UID = async (req, res) => {
                 PI_UID: req.params.id
             }
         });
-        console.log(pushes)
         res.json(pushes);
     } catch (error) {
         res.json({ message: error.message });

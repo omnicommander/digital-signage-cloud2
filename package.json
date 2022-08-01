@@ -15,8 +15,8 @@
   "keywords": [
     "none"
   ],
-  "author": "Eric M Bradshaw",
-  "license": "UNLICENSED",
+  "author": "Eric M Bradshaw - Lead Developer OMNICOMMANDER",
+  "license": "OMNICOMMANDER",
   "dependencies": {
     "concurrently": "^7.1.0",
     "eslint": "^5.6.0",

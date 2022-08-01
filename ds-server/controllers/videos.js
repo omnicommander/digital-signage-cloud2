@@ -3,8 +3,7 @@ import Videos from "../models/videoModel.js";
 
 export const getAllVideos = async (req, res) => {
     try {
-    
-        
+    /* Get ALL VIDEOS? */
     } catch (error) {
         res.json({ message: error.message });
     }
@@ -23,7 +22,6 @@ export const getVideoById = async (req, res) => {
     }   
 }
 export const getVideosByCampaignId = async (req, res) => {
-    console.log(req)
     /* try {
         const videos = await Videos.findAll({
             where: {
@@ -66,9 +64,9 @@ export const updateVideo = async (req, res) => {
  
 export const deleteVideo = async (req, res) => {
     try {
-        await Video.destroy({
+        await Videos.destroy({
             where: {
-                id: req.params.id
+                video_id: req.params.id
             }
         });
         res.json({
